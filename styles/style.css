@@ -110,10 +110,10 @@ body{
     /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    border: 1px solid gray;
+    gap: 40px;
+    border: 0.2px solid gray;
     /* opacity: 0.5; */
-    padding: 20px 60px
+    padding: 20px 60px;
     /* margin-bottom: 20px; */
 }
 .ecom-sites ul li{
