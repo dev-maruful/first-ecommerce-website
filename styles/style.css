@@ -24,6 +24,14 @@ body{
     text-align: right;
     background: aliceblue;
 }
+.third-btn{
+    background: #E02C6D;
+    color: white;
+    border: 2px solid transparent;
+    /* border-radius: 40px; */
+    padding: 10px 20px;
+    cursor: pointer;
+}
 
 /* header styles */
 .header{
@@ -145,4 +153,24 @@ body{
 .see-more-btn{
     text-align: right;
     margin-top: 50px;
+}
+
+/* secondary section start */
+.secondary-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.secondary-section > div{
+    flex: 1;
+}
+.secondary-section .section-text-title{
+    font-size: 38px;
+    color: #0A0826;
+    margin-bottom: 15px;
+}
+.secondary-section .section-text-description{
+    font-size: 16px;
+    color: #6C6C6C;
+    margin-bottom: 15px;
 }
