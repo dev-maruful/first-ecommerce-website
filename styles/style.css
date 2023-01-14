@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 body{
     /* background: #AAAAAA; */
@@ -34,8 +35,12 @@ body{
 }
 
 /* header styles */
+/* .container{
+    padding: 80 auto;
+} */
 .header{
     padding: 80px 120px;
+    /* text-align: center; */
     padding-bottom: 20px;
 }
 .nav-content{
@@ -63,11 +68,14 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 130px;
+    gap: 50px;
     margin-bottom: 150px;
 }
+.highlighted-product .product-text{
+    /* width: 50%; */
+}
 .highlighted-product > div{
-    flex: 1;
+    /* flex: 1; */
 }
 .highlighted-product .text-title{
     font-size: 50px;
@@ -80,11 +88,17 @@ body{
     margin-bottom: 20px;
 }
 .highlighted-product .product-picture img{
-    background-image: url(../images/Circle\ design.svg);
-    background-repeat: no-repeat;
+    /* background-image: url(../images/Circle\ design.svg); */
+    /* background-repeat: no-repeat; */
     /* height: 600px; */
 }
 .highlighted-product .product-picture{
+    /* width: 50%; */
+    background-image: url(../images/Circle\ design.svg); 
+    background-repeat: no-repeat;
+    /* padding: 10px; */
+    background-size: contain;
+
     /* height: 600px */
     /* width: 600px; */
 }
@@ -99,7 +113,7 @@ body{
     gap: 60px;
     border: 1px solid gray;
     /* opacity: 0.5; */
-    padding: 35px 60px;
+    padding: 20px 60px
     /* margin-bottom: 20px; */
 }
 .ecom-sites ul li{
@@ -233,14 +247,26 @@ main{
         width: 100%;
         gap: 15px;
         margin-bottom: 50px;
+        /* padding: 0; */
+    }
+    .highlighted-product > div {
+        flex: 1;
+    }
+    .highlighted-product .product-picture{
+        /* width: 257px; */
+        /* height: ; */
+        background-size: contain;
+        width: 50%;
+        text-align: center;
     }
     .highlighted-product .product-picture img{
         /* width: 100%; */
         /* height: 1000; */
         height: 190px;
-        background: none;
+        /* background: none; */
     }
     .highlighted-product .product-text{
+        width: 100%;
         text-align: center;
     }
     .highlighted-product .text-title{
