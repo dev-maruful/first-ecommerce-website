@@ -79,14 +79,21 @@ body{
     color: #3A3A3A;
     margin-bottom: 20px;
 }
-.highlighted-product .product-picture{
+.highlighted-product .product-picture img{
     background-image: url(../images/Circle\ design.svg);
     background-repeat: no-repeat;
+    /* height: 600px; */
 }
+.highlighted-product .product-picture{
+    /* height: 600px */
+    /* width: 600px; */
+}
+
 
 /* ecom sites styles */
 .ecom-sites ul{
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     gap: 60px;
@@ -124,6 +131,7 @@ main{
 }
 .product-item img{
     justify-self: center;
+    width: 100%;
 }
 .product-item .item-name{
     font-weight: 500;
@@ -200,4 +208,91 @@ main{
     padding: 8px;
     border-radius: 50%;
     margin: 8px;
+}
+
+/* responsive styles */
+@media only screen and (max-width: 576px) {
+    .header{
+        padding: 35px 15px;
+        /* width: 100%; */
+    }
+    .show{
+        display: none;
+    }
+    .nav-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .logo h3{
+        font-size: 16px;
+    }
+    .highlighted-product{
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 15px;
+        margin-bottom: 50px;
+    }
+    .highlighted-product .product-picture img{
+        /* width: 100%; */
+        /* height: 1000; */
+        height: 190px;
+        background: none;
+    }
+    .highlighted-product .product-text{
+        text-align: center;
+    }
+    .highlighted-product .text-title{
+        font-size: 28px;
+    }
+    .highlighted-product .text-description{
+        font-size: 14px;
+    }
+    .ecom-sites ul{
+        border: none;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 0 40px;
+    }
+    .ecom-sites ul li img{
+        width: 40px;
+        height: 20px;
+        /* align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap; */
+    } 
+    main{
+        padding: 50px 15px;
+    }
+    .product-items{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+    .secondary-section{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .secondary-section .section-text{
+        text-align: center;
+    }
+    .secondary-section .section-text .section-text-title{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .secondary-section .section-image img{
+        width: 100%;
+    }
+    .footer .footer-title{
+        font-size: 16px;
+    }
+    .footer .copyright-text{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 577px) {
+    .hide{
+        display: none;
+    }
 }
