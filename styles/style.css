@@ -1,0 +1,82 @@
+/* universal styles */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    /* background: #AAAAAA; */
+    padding: 80px 120px;
+}
+.btn-primary{
+    background: #E02C6D;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* header styles */
+.header{
+    
+}
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.logo h3{
+    font-size: 24px;
+    color: #3A3A3A;
+}
+.nav ul{
+    display: flex;
+    gap: 35px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.nav ul li{
+    list-style: none;
+    color: #3A3A3A;
+}
+
+/* highlighted product styles */
+.highlighted-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 130px;
+    margin-bottom: 150px;
+}
+.highlighted-product > div{
+    flex: 1;
+}
+.highlighted-product .text-title{
+    font-size: 50px;
+    color: #3A3A3A;
+    margin-bottom: 15px;
+}
+.highlighted-product .text-description{
+    font-weight: 600;
+    color: #3A3A3A;
+    margin-bottom: 15px;
+}
+.highlighted-product .product-picture{
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+}
+
+/* ecom sites styles */
+.ecom-sites ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    border: 1px solid gray;
+    /* opacity: 0.5; */
+    padding: 35px 60px;
+}
+.ecom-sites ul li{
+    list-style: none;
+}
