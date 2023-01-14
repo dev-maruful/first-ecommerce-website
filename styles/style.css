@@ -36,6 +36,7 @@ body{
 /* header styles */
 .header{
     padding: 80px 120px;
+    padding-bottom: 20px;
 }
 .nav-content{
     display: flex;
@@ -76,7 +77,7 @@ body{
 .highlighted-product .text-description{
     font-weight: 600;
     color: #3A3A3A;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .highlighted-product .product-picture{
     background-image: url(../images/Circle\ design.svg);
@@ -92,7 +93,7 @@ body{
     border: 1px solid gray;
     /* opacity: 0.5; */
     padding: 35px 60px;
-    margin-bottom: 100px;
+    /* margin-bottom: 20px; */
 }
 .ecom-sites ul li{
     list-style: none;
@@ -162,7 +163,7 @@ main{
 .secondary-section{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 .secondary-section > div{
     flex: 1;
